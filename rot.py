@@ -28,7 +28,7 @@ def rotate(image: numpy.array, angle: int) -> numpy.array:
         [math.sin(angle), +math.cos(angle)],
     ])
     vec_pixels = numpy.int_(R @ vec_pixels + vec_origin)
-    print('generating image ...')
+    print('generating image ...')   # TODO: optimize O(h*w)
     output = numpy.full(shape=(height, width, 3), fill_value=[0, 0, 0])
     for x in range(height):
         for y in range(width):
