@@ -42,7 +42,7 @@ def rotate(image: numpy.array, angle: int) -> numpy.array:
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
-        print('Usage:\n\x20\x20{0} <image> <angle>'.format(sys.argv[0]))
+        print(f'Usage:\n\x20\x20{sys.argv[0]} <image-path> <angle-ccw>')
         exit(1)
     else:
         image, angle = sys.argv[1], sys.argv[2]
